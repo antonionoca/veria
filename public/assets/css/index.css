@@ -53,6 +53,7 @@ pre code {
 	-moz-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
 	box-shadow: rgba(0,0,0,0.1) 0 0 5px;
 	margin-bottom: 20px;
+    display: inline-block;
 }
 
 .pagebody .pagebody-main {
