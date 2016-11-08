@@ -1,8 +1,8 @@
 var settings = {
     site: {
-        URL: 'http://localhost:3000',  //Complete URL to root. No trailing slash.
-        name: 'VERIA CMS',	//Name of Site
-        tagline: 'This is a fresh installation!' //Tagline used in title and site description
+        URL: process.env.VERIAURL,  //Complete URL to root. No trailing slash.
+        name: process.env.VERIANAME,	//Name of Site
+        tagline: process.env.VERIATAGNOTES //Tagline used in title and site description
     },
     database: {
         client: 'sqlite3',
@@ -20,29 +20,19 @@ var settings = {
         name: 'default',
         index: {
             sidebar: {
-                avatarURL: 'http://localhost:3000/assets/images/logo.jpg',
-                name: 'My Name!!',
-                tagline: 'This my tag line, or a little bit about me!!',
-                socialLinks:  // social links can be removed or replaced. Just replace with empty array if not required.
-                    [{
-                        name: 'Facebook',
-                        icon: 'http://localhost:3000/assets/images/social-facebook.png',
-                        URL: '#'
-                    },
+                avatarURL: process.env.VERIAAVATARURL,
+                name: process.env.VERIANAME,
+                tagline: process.env.VERIASIDEBARTAGLINE,
+                socialLinks:  [
                     {
                         name: 'Twitter',
-                        icon: 'http://localhost:3000/assets/images/social-twitter.png',
-                        URL: '#'
+                        icon: process.env.VERIATWITTERICON,
+                        URL: process.env.VERIATWITTERURL
                     },
                     {
-                        name: 'Youtube',
-                        icon: 'http://localhost:3000/assets/images/social-youtube.png',
-                        URL: '#'
-                    },
-                    {
-                        name: 'Gmail',
-                        icon: 'http://localhost:3000/assets/images/social-gmail.png',
-                        URL: '#'
+						name: 'LinkedIn',
+						icon: process.env.VERIALINKEDINICON,
+						URL: process.env.VERIALINKEDINURL
                     }]
             }
         }
