@@ -53,23 +53,24 @@ pre code {
 	-moz-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
 	box-shadow: rgba(0,0,0,0.1) 0 0 5px;
 	margin-bottom: 20px;
+	display:inline-block;
 }
 
 .pagebody .pagebody-main {
-        display: inline-block;
-        position: relative;
-        height: 100%;
-        padding: 15px;
+	display: inline-block;
+	position: relative;
+	height: 100%;
+	padding: 15px;
 	max-width: 600px;
 }
 
 .pagebody .pagebody-sidebar {
-        display: table-cell;
-        position: relative;
-        float: right;
-        height: 100%;
-		width: 300px;
-        overflow: hidden;
+	display: table-cell;
+	position: relative;
+	float: right;
+	height: 100%;
+	width: 300px;
+	overflow: hidden;
 }
 
 /* Navigation Bar */
@@ -356,10 +357,11 @@ pre code {
     
     .pagebody-main {
         display: block;
+		width: 95%;
     }
     
     .pagebody .pagebody-sidebar .sidebar > div:not(:first-child) {
-            display:none;
+        display:none;
     }
     
     .navbar-wrap {
@@ -373,12 +375,12 @@ pre code {
 
 @media (max-width: 380px) {
  
- .socialbar .button {
-	width:26px;
-	padding-left:5px;
- }
+	.socialbar .button {
+		width:26px;
+		padding-left:5px;
+	}
 
- .pagebody {
+	 .pagebody {
         margin-top: 0px;
     }   
 }
