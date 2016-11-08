@@ -53,6 +53,7 @@ pre code {
 	-moz-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
 	box-shadow: rgba(0,0,0,0.1) 0 0 5px;
 	margin-bottom: 20px;
+	display:inline-block;
 }
 
 .pagebody .pagebody-main {
@@ -335,12 +336,12 @@ pre code {
 
 @media (max-width: 963px) {
     .splash {
-		margin: 0px !important;
+	margin: 0px !important;
         position: relative;
     }
     
     .pagebody {
-		border-top: none;
+	border-top: none;
         margin-top: 15px;
         display: block;
     }
@@ -356,10 +357,11 @@ pre code {
     
     .pagebody-main {
         display: block;
+	width: 95%;
     }
     
     .pagebody .pagebody-sidebar .sidebar > div:not(:first-child) {
-            display:none;
+        display:none;
     }
     
     .navbar-wrap {
