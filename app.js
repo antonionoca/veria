@@ -28,7 +28,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
-app.use(session({ secret: 'kjfewggwe_WaWa__gew', cookie: { maxAge : 1200000 }, resave: false, saveUninitialized: false }));
+app.use(session({ secret: process.env.VERIASECRET, resave: false, saveUninitialized: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(passport.initialize());
