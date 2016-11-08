@@ -1,3 +1,4 @@
 config/veria.db
 node_modules
 blog.js
+config/config.js
